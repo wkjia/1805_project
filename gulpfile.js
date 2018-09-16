@@ -71,13 +71,13 @@ gulp.task('server',function(){
 		// server:'./src',
 
 		// 指定端口
-		port:1800,
+		port:1600,
 
 		// 代理服务器
 		// 用browserSync代理php服务器
 		// 	* 识别php
 		// 	* 自动刷新
-		proxy:'http://localhost:1800',
+		proxy:'http://localhost:1600',
 
 		// 监听文件修改
 		files:['./src/**/*.html','./src/css/*.css'],

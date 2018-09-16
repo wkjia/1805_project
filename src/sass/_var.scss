@@ -1,5 +1,36 @@
-$mainColor:#FF7700;
-$color1:#666666;
-$color2:#333333;
+//主要字体颜色
+$mainColor:#727171;
+//加粗红色字体
+$color1:#bb2b34;
+//黑色加粗字体
+$color2:#fefefe;
+
 $fontSize:12px;
+
+//手型点击
+%cus{
+    cursor:pointer;
+}
+body{
+    $fontSize:12px;
+}
+
+//重置container
+.container{
+    width:1200px;font-size:$fontSize;color:$mainColor;
+}
+//重置a标签的字体颜色
+a{
+    color:$mainColor;
+}
+
+em, strong, th {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
 
