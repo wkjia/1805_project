@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main .clothes li, .footer .BayWindow ul .BlackTop a { cursor: pointer; }
 
 .container { width: 1200px; font-size: 12px; color: #727171; }
@@ -7,6 +8,8 @@ a { color: #727171; }
 em, strong, th { font-style: normal; font-weight: normal; }
 
 a:link, a:visited { color: #333; text-decoration: none; }
+
+body { font-size: 12px; font-family: "宋体"; color: #333; }
 
 a:hover { color: #bb2b34; }
 

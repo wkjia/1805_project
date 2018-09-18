@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>免烫寸衫商品列表页面</title>
+    <style type="text/css">
+        .p_header{position:fixed;top:0px;z-index:100000;background:white;}
+    </style>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/goodsList.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
@@ -15,11 +18,172 @@
         
     </nav>
     <main class="g_main">
-        
+        <div class="container">
+            <div class="breadnav">
+                <div class="locationdiv">
+                    <span>当前位置：</span>
+                    <a class="track"href="#">所有分类</a>
+                </div>
+                <div class="tsmsg">找到和
+                    <span>免烫</span>相关商品
+                    <span>46</span>款
+                </div>
+            </div>
+            <div class="selectarea">
+                <div class="typearea">
+                    <div class="autoheightcontrol selectareali01 clearfix" toggle="0" style="">
+                        <div class="selectareaLeft">
+                                <em>服装</em>
+                        </div>
+                        <div class="selectareaRight autoheight" loadattribute="false">
+                            <ul>
+                                <li>
+                                     <a class="track" name="s-s-filter_cat-27531" href="#">
+                                     男装<span>(46)</span>
+                                     </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="selectareali_a" toggle="0" style=""></span>
+                </div>
+            </div>
+            <div id="floatdiv">
+                <div class="filterTabBarN5">
+                    <ul class="searchTabbarN5">
+                        <li class="hover">
+                            <a class="track" name="s-s-link-all" href="#">全部商品</a>
+                        </li>
+                    </ul>
+                    <div class="pageBoxN5">
+                        <div class="pagediv">
+                            <span>1/1</span>
+                            <span>
+                                <a class="jquery_pager_prevpage jquery_pager_margintop11" href="#"></a>
+                            </span>
+                            <span>
+                                <a class="jquery_pager_nextpage jquery_pager_margintop11" href="#"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterFormN5">
+                    <div class="filterForm0703">
+                        <div class="searchCol">
+                            <ul>
+                                <li class="moren">
+                                    <a title="按推荐由高到低" name="s_order_0_10" class="track" href="#">
+                                    <em>默认</em>
+                                    <span class="upTrendBottom">按推荐由高到低</span></a></li>
+                                <li class="xiaoliang">
+                                    <a title="按销量由高到低" name="s_order_0_2" class="track" href="#">
+                                    <em>销量</em>
+                                    <span class="upTrendBottom">按销量由高到低</span></a></li>
+                                <li class="haoping">
+                                    <a title="按评价从高到低" name="s_order_0_5" class="track" href="#">
+                                    <em>好评</em>
+                                    <span class="upTrendBottom">按评价从高到低</span></a></li>
+                                <li class="zuixin">
+                                    <a title="上架新品" name="s_order_0_1" class="track" href="#">
+                                    <em>最新</em>
+                                    <span class="BottomTrendUpRed">上架新品</span></a></li>
+                                <li class="jiage jiageHover" id="sortTypeMore">
+                                    <a title="按价格从低到高" name="s_order_0_3" class="track" href="#">
+                                        <em>价格</em>
+                                        <span class="BottomTrendUp">按价格从低到高</span>
+                                    </a>                        
+                                    <span class="triggerMore">更多</span>
+                                    <div class="dropdownList" id="sortTypeList">
+                                        <p class="price_l">
+                                            <a title="按价格从低到高" name="s_order_0_3" class="track" href="#">
+                                                <em>价格</em>
+                                                <span class="BottomTrendUp">按价格从低到高</span>
+                                            </a>
+                                        </p>
+                                        <p class="price_h">
+                                            <a title="按价格从高到低" name="s_order_0_4" class="track" href="#">
+                                                <em>价格</em>
+                                                <span class="upTrendBottom">按价格从高到低</span>
+                                            </a>
+                                        </p>
+                                        <p class="count">
+                                            <a title="按折扣从高到低" name="s_order_0_13" class="track" href="#">
+                                                <em>折扣</em>
+                                                <span class="upTrendBottom">按折扣从高到低</span>
+                                            </a>
+                                        </p>
+                                        <p class="straight">
+                                            <a title="按直降从高到低" name="s_order_0_12" class="track" href="#">
+                                                <em>直降</em>
+                                                <span class="upTrendBottom">默直降高到低</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="searchbarPrice">
+                            <div class="searchbarTextN50124" id="searchPriceArea">
+                                <div class="searchbarInit">
+                                    <input type="text" title="按价格区间筛选 最低价" value="" id="minPrice" class="FpriceText0124">
+                                    <span class="Fline0124">-</span>
+                                    <input type="text" title="按价格区间筛选 最低价" value="" id="maxPrice" class="FpriceText0124 FpriceTextMal0124">
+                                </div>
+                                <div class="searchbarFoused" id="searchPriceButtonArea">
+                                    <p>
+                                        <a href="#" class="searchbarBtnCommon parent" id="clearPrice">清空</a>
+                                        <a href="#" class="searchbarBtnStrong parent" id="selectPrice"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hbDpBox">
+                            <ul>
+                                <li class="hblist hblistHover">
+                                    <a href="#" name="s_browsetype_1" class="track">合并同款</a>   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 根据数据生成页面结构内容 -->
+            <div class="lists">
+                <ul class="goods">  
+                </ul>
+
+                <div class="page">
+                    <input type="button" class="pageSure" />
+                    <strong>页</strong>
+                    <input type="text" id="bottompageindex" class="pageGGshuru20111226" value="1">
+                    <strong>到第</strong>
+                    <em class="allpagesNumber20111226">共1页</em>
+                    <span class="jquery_pager_nextpage20111226" onmouseover="$(this).css('background-position', '46px -1976px');" onmouseout="$(this).css('background-position', '46px -1954px');" style="background-position: 46px -1954px;">
+                        <a>下一页</a>
+                    </span>
+                    <ul>
+                        <li class="currentpage20111226">1</li>
+                    </ul>
+                    <span class="jquery_pager_prevpage20111226" onmouseover="$(this).css('background-position', '3px -2018px');" onmouseout="$(this).css('background-position', '3px -1996px');" style="background-position: 3px -1996px;">
+                        <a>上一页</a>
+                    </span>
+                </div>
+
+                <div class="server">
+                </div>
+                
+            </div>
+        </div>
     </main>
     <footer class="g_footer">
         
     </footer>
+    <div class="tip">
+        <a href="#">
+            <div class="s_backtotop"></div>
+        </a>
+    </div>
 
 <script src="../js/require.js" type="text/javascript" data-main="../js/goodsList"></script>
 </body>

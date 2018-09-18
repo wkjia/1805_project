@@ -1,1 +1,547 @@
 @import 'var';
+.g_main{
+  .breadnav {
+        line-height: 40px;
+        overflow:hidden;
+        .locationdiv {
+            display: inline;
+            float: left;
+            span {
+                color: #b4b4b4;
+            }
+        }
+        .tsmsg {
+            display: inline;
+            float: right;
+            color: #b4b4b4;
+            span {
+                color: #a00000;
+                padding: 0px 2px;
+            }
+        }
+    }
+    .selectarea {
+        border: 1px solid #C7CACD;
+        clear: both;
+        padding: 0px 1px 0px 0px;
+        margin-bottom:15px;
+        .typearea{
+            .selectareali01{
+                line-height: 24px;
+                overflow:hidden;
+                .selectareaLeft{
+                    width: 66px;
+                    display: inline;
+                    float: left;
+                    width: 50px;
+                    text-align: center;
+                    em{
+                        color: #2f2f2f;
+                        height: 24px;
+                        line-height: 24px;
+                        display: block;
+                        padding: 5px 0px;
+                    }
+                }
+                .selectareaRight {
+                    width: 1130px;
+                    display: inline;
+                    float: left;
+                    width: 926px;
+                    padding: 5px 0px 5px;
+                    border-left: 1px solid #ccc;
+                    background: #fff;
+                    ul{
+                        overflow:hidden;
+                        li{
+                            display: block;
+                            float: left;
+                            height: 24px;
+                            line-height: 24px;
+                            margin-left: 25px;
+                            white-space: nowrap;
+                            a{
+                                display: block;
+                                float: left;
+                                min-width: 11px;
+                                span{
+                                    color: #999;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #floatdiv{
+        position:static;
+        .filterTabBarN5{
+            border-bottom: 2px solid #b81c22;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            .searchTabbarN5 {
+                margin-left: 1px;
+                width: 755px;
+                overflow:hidden;
+                li{
+                    float: left;
+                    height: 28px;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 28px;
+                    background: #b81c22;
+                    color: #343434;
+                    border: 1px solid #ccc;
+                    border-bottom: none;
+                    padding: 0px 20px 0px;
+                    margin: 1px 0px 0px -1px;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .hover{
+                    color: #fff;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-top: 0px;
+                    background: #b81c22;
+                    border: none;
+                    a{
+                        color:#fff;
+                    }
+                }
+            }
+            .pageBoxN5 {
+                line-height: 40px;
+                position: absolute;
+                right: 0px;
+                top: -2px;
+                .pagediv {
+                    display: inline;
+                    float: right;
+                    span{
+                        display: block;
+                        float: left;
+                        margin-left: 12px;
+                        .jquery_pager_margintop11 {
+                            margin-top: 11px;
+                        }
+                        .jquery_pager_prevpage {
+                            background: url(../img/sprites_20130606.png) no-repeat 0px -72px;
+                            height: 17px;
+                            width: 19px;
+                            cursor: pointer;
+                            display: block;
+                        }
+                        .jquery_pager_nextpage {
+                            background: url(../img/sprites_20130606.png) no-repeat 0px -89px;
+                            cursor: pointer;
+                            height: 17px;
+                            width: 48px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .filterFormN5 {
+            width: 1200px;
+            border-top: none;
+            height: 34px;
+            position: relative;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            .filterForm0703{
+                width:100%;
+                .searchCol {
+                    float: left;
+                    position: relative;
+                    ul{
+                        .moren{
+                            border-left: none;
+                        }
+                        .jiage{
+                            padding: 0px;
+                            height: 34px;
+                            position: relative;
+                            border-right: none;
+                        }
+                        .jiageHover{
+                            width: 73px;
+                            padding-left: 15px;
+                            text-align: left;
+                            border-left-color: #ddd;
+                            background: #eee;
+                        }
+                        
+                        li{
+                            float: left;
+                            height: 34px;
+                            border: 1px solid #f5f5f5;
+                            border-left-color: #ddd;
+                            border-bottom: none;
+                            border-top: none;
+                            line-height: 34px;
+                            padding: 0px 12px 0px 20px;
+                            display: inline-block;
+                            a{
+                                color: #656565;
+                                &:hover{
+                                    color:$color1;
+                                }
+                                em{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                                span{
+                                    display: inline-block;
+                                    height: 11px;
+                                    width: 11px;
+                                    line-height: 11px;
+                                    margin-left: 0px;
+                                    text-indent: -9999px;
+                                    vertical-align: middle;
+                                    background: url(../img/sprites_20130606.png) no-repeat;
+                                }
+                                .BottomTrendUp{
+                                    background-position: 0px -3112px;
+                                }
+                                .upTrendBottom{
+                                            background-position: 0px -3090px;
+                                }
+                                .BottomTrendUpRed{
+                                    background-position: -21px -3112px;
+                                }
+                            }
+                            .triggerMore{
+                                display: inline-block;
+                                text-indent: -9999px;
+                                vertical-align: top;
+                                background: url(../img/sprites_20130606.png) no-repeat 0px -3131px;
+                                width: 11px;
+                                height: 10px;
+                                position: relative;
+                                top: 13px;
+                                z-index: 4;
+                            }
+                            .dropdownList{
+                                position: absolute;
+                                width: 88px;
+                                border: 1px solid #ddd;
+                                border-top: none;
+                                left: -1px;
+                                top: 0px;
+                                background: #eee;
+                                z-index: 3;
+                                display:none;
+                                p{
+                                    height: 34px;
+                                    text-align: left;
+                                    a{
+                                        height: 34px;
+                                        line-height: 34px;
+                                        padding-left: 15px;
+                                        width: 71px;
+                                        em{
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                        }
+                                        span{
+                                            display: inline-block;
+                                            height: 11px;
+                                            width: 11px;
+                                            line-height: 11px;
+                                            text-indent: -9999px;
+                                            vertical-align: middle;
+                                            background: url(../img/sprites_20130606.png) no-repeat;
+                                        }
+                                        .BottomTrendUp{
+                                            background-position: 0px -3112px;
+                                        }
+                                        .upTrendBottom{
+                                            background-position: 0px -3090px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .jiage:hover .dropdownList{
+                            display:block;
+                        }
+                        .dropdownList p:hover{
+                            background: #fff;
+                        }
+                    }
+                }
+                .searchbarPrice {
+                    float: left;
+                    height: 34px;
+                    border-right: 1px solid #ddd;
+                    width: 133px;
+                    .searchbarTextN50124 {
+                        float: left;
+                        width: 109px;
+                        position: relative;
+                        height: 29px;
+                        z-index: 1;
+                        margin-left: 15px;
+                        display: inline;
+                        margin-top: 2px;
+                        .searchbarInit{
+                            position: absolute;
+                            width: 107px;
+                            height: 27px;
+                            z-index: 6;
+                            .FpriceText0124 {
+                                border: 1px solid #aeb1b4;
+                                height: 17px;
+                                line-height: 17px;
+                                width: 35px;
+                                padding-left: 3px;
+                                float: left;
+                                margin: 6px 0px 0px 6px;
+                                display: inline;
+                                color: #999;
+                            }
+                            .Fline0124 {
+                                margin: 6px 3px 0px;
+                                float: left;
+                                display: inline;
+                                line-height: 19px;
+                                color: #999;
+                                font-size: 19px;
+                            }
+                            .FpriceTextMal0124 {
+                                margin-left: 0px;
+                            }
+                        }
+                        .searchbarFoused {
+                            position: absolute;
+                            width: 110px;
+                            height: 50px;
+                            z-index: 5;
+                            border: 1px solid #b4b4b4;
+                            background: #fff;
+                            left: -2px;
+                            display:none;
+                            p{
+                                height: 21px;
+                                position: relative;
+                                top: 27px;
+                                .searchbarBtnCommon{
+                                    line-height: 19px;
+                                    padding-left: 14px;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                                .searchbarBtnStrong{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    background: url(../img/tabbgn6_ws.png) no-repeat -0px -58px;
+                                    width: 45px;
+                                    height: 19px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .hbDpBox {
+                    float: right;
+                    ul{
+                        li{
+                            float: left;
+                            height: 34px;
+                            border-left: 1px solid #ccc;
+                            line-height: 34px;
+                            width: 88px;
+                            text-align: center;
+                            position: relative;
+                            a{
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                        .hblist{
+                            position: relative
+                        }
+                        .hblistHover{
+                            background: #eee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lists{
+        width:1215px;
+        margin-top:15px;
+        .goods{
+            overflow:hidden;
+            .good{
+                // border:1px solid $color1;
+                float: left;
+                margin: 0px 12px 20px 0px;
+                display: inline;
+                width: 231px;
+                .pic{
+                    width: 230px;
+                    height: 230px;
+                    z-index: 0;
+                    position: relative;
+                    text-align: center;
+                }
+
+                img{
+                    display:block;
+                    border:1px solid #ccc;
+                     position:relative;
+                }
+                &:hover img{
+                   border-color:$color1; 
+                }
+                .descript{
+                    margin-top: 10px;
+                    padding: 0px 3px 5px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-family: "Microsoft YaHei";
+                    height: 38px;
+                    overflow: hidden;
+                    a{
+                        margin-top: 10px;
+                        padding: 0px 3px 5px;
+                        line-height: 38px;
+                        text-align: center;
+                        font-size: 13px;
+                        font-family: "Microsoft YaHei";
+                    }
+                }
+                .Mpricediv0124{
+                    text-align: center;
+                    display: inline-block;
+                    width: 100%;
+                    color: #b81c22;
+                    font-weight: bold;
+                }
+                .teshui {
+                    background: url(../img/sprites_20130606.png) no-repeat 0px -841px transparent;
+                    bottom: 0;
+                    color: #FFFFFF;
+                    font-family: "arial";
+                    font-size: 16px;
+                    height: 25px;
+                    padding: 18px 0 2px 6px;
+                    position: absolute;
+                    right: 0;
+                    text-align: center;
+                    width: 40px;
+                    text-indent: -5px;
+                }
+            }
+        }
+        .page{
+            float:right;
+            .pageSure{
+                float: right;
+                width: 49px;
+                height: 26px;
+                border: none;
+                border: 0;
+                margin-left: 10px;
+                background: url(../img/sprites_20130606.png) no-repeat scroll 0px -2044px;
+                @extend %cus;
+                }
+                strong{
+                    float: right;
+                    margin-top: 6px;
+                }
+                .pageGGshuru20111226 {
+                    float: right;
+                    width: 26px;
+                    height: 24px;
+                    border: 1px solid #ededed;
+                    line-height: 24px;
+                    text-align: center;
+                    margin: 0px 4px;
+                    font-size:12px;
+                }
+                .allpagesNumber20111226 {
+                    float: right;
+                    display: inline-block;
+                    margin: 6px 10px 0px;
+                    font-size: 12px;
+                    font-family: "宋体";
+                    color: #333;
+                }
+                span{
+                    display:block;
+                    float:right;
+                    // @extend %cus;
+                    width: 43px;
+                    height: 24px;
+                    padding-right: 14px;
+                    line-height: 24px;
+                    text-align: right;
+                    border: 1px solid #efefef;
+                    background: url(../img/sprites_20130606.png) no-repeat scroll 46px -1954px;
+                }
+                    ul{
+                        display: inline;
+                        float: right;
+                        margin-right: 7px;
+                        .currentpage20111226{
+                            color: #FFFFFF;
+                            font-weight: bold;
+                            background: #b81c22;
+                            width: 26px;
+                            line-height: 24px;
+                            height: 24px;
+                            border: 1px solid #ededed;
+                        }
+                        li{
+                            display: inline;
+                            float: left;
+                            margin-left: 7px;
+                            text-align: center;
+                        } 
+                    }
+                
+                    .jquery_pager_prevpage20111226{
+                        // @extend %cus;
+                        display: inline;
+                        width: 43px;
+                        height: 24px;
+                        padding-left: 14px;
+                        line-height: 24px;
+                        text-align: left;
+                        border: 1px solid #efefef;
+                        background: url(../img/sprites_20130606.png) no-repeat scroll 3px -1996px;
+                        a{
+                            line-height: 24px;
+                            text-align: left;
+                            @extend %cus;
+                        }
+                    }
+                   
+            }
+        }
+
+}
+.tip{
+    right: 0px;
+    position: fixed;
+    bottom: 5px;
+    display: none;
+    .s_backtotop {
+        height: 24px;
+        width: 34px;
+        cursor: pointer;
+        background: url(../img/sprites_20130606.png) no-repeat scroll 0 -2079px transparent;
+        border:1px solid $color1;
+    }
+}
+

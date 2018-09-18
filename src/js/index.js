@@ -48,7 +48,7 @@ require(['config'],function(){
                         * 隐藏倒计时
                                                   */
         //指定结束时间
-        var endTime = '2018-9-17 13:53:00'
+        var endTime = '2018-9-18 09:13:00'
         //将当前时间转换成毫秒数
         var end = Date.parse(endTime)
         time()
@@ -64,6 +64,9 @@ require(['config'],function(){
             if(offset<=0){
                 //停止定时器
                 clearInterval(timer);
+                $('.t2').text(00)
+                $('.t3').text(00)
+                $('.t4').text(00)
             }
 
             //转换时间格式，写入到页面中
@@ -90,6 +93,7 @@ require(['config'],function(){
             $('.t2').text(hour)
             $('.t3').text(min)
             $('.t4').text(sec)
+             time()
         }
 
         

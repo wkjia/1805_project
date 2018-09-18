@@ -10,7 +10,8 @@ require.config({
         'index':'js/index',
         'common':'../lib/common',
         'carousel':'/js/carousel',
-        'goodsList':'js/goodsList'
+        'goodsList':'js/goodsList',
+        'goods':'js/goods'
 
     },
 
@@ -21,7 +22,8 @@ require.config({
         'index':['jquery'],
         'bootstrap':['jquery'],
         'carousel':['common'],
-        'goodsList':['index']
+        'goodsList':['index'],
+        'goods':['jquery']
     },
 
 
