@@ -1,4 +1,6 @@
 @charset "UTF-8";
+.danpin_colLef .danpinLeft .smallImg .smallImgUp, .danpin_colLef .danpinLeft .smallImg .downer { cursor: pointer; }
+
 .container { width: 1200px; font-size: 12px; color: #727171; }
 
 a { color: #727171; }
@@ -8,3 +10,195 @@ em, strong, th { font-style: normal; font-weight: normal; }
 a:link, a:visited { color: #333; text-decoration: none; }
 
 body { font-size: 12px; font-family: "宋体"; color: #333; }
+
+.blank10 { clear: both; display: block; font-size: 0; height: 10px; }
+
+.breadNav { color: #000; Height: 22px; }
+
+.breadNav .breadNav span { margin: 0 8px; }
+
+.blank0 { display: block; width: 100%; height: 0px; line-height: 0px; font-size: 0px; clear: both; overflow: hidden; }
+
+.danpinArea { height: auto; margin: 0px auto; zoom: 1; }
+
+.danpinArea .danpinTitleTab { height: 45px; border-bottom: 1px solid #e5e6e6; min-width: 980px; }
+
+.danpinArea .danpinTitleTab .brandNumArea { display: none; }
+
+.danpinArea .danpinTitleTab .brandNumArea span { float: right; width: 102px; background: none; padding: 0px; margin: 0px; }
+
+.danpinTitleTab h2 { margin-left: 10px; float: left; margin-right: 10px; line-height: 45px; font-size: 18px; font-weight: bold; font-family: "Microsoft YaHei"; color: #333333; }
+
+.danpinTitleTab ul { height: 45px; }
+
+.danpinTitleTab ul li { float: left; color: #808080; height: 45px; margin: 0 10px 0 0; }
+
+.danpinTitleTab ul li a { font-family: 微软雅黑; color: #000; font-weight: bold; font-size: 15px; display: inline-block; padding: 0px 15px 0px 0px; height: 45px; line-height: 45px; }
+
+.blank30 { display: block; width: 100%; height: 30px; line-height: 0px; font-size: 0px; clear: both; overflow: hidden; }
+
+.danpin_colLef { height: auto; float: left; width: 634px; }
+
+.danpin_colLef .danpinLeft { width: 72px; height: auto; float: left; margin-top: -23px; position: relative; display: inline; }
+
+.danpin_colLef .danpinLeft .smallImg { display: inline; float: left; width: 72px; }
+
+.danpin_colLef .danpinLeft .smallImg .smallImgUp { visibility: hidden; margin-top: 13px; }
+
+.danpin_colLef .danpinLeft .smallImg .upper { background-image: url(../img/sprite0725.png); background-position: -3270px 0; }
+
+.danpin_colLef .danpinLeft .smallImg .smallImgUp, .danpin_colLef .danpinLeft .smallImg .smallImgDown { height: 5px; width: 72px; overflow: hidden; }
+
+.danpin_colLef .danpinLeft .smallImg #imageMenu { height: 415px; overflow: hidden; }
+
+.danpin_colLef .danpinLeft .smallImg #imageMenu #onlickImg { border: 1px solid #a10000; }
+
+.danpin_colLef .danpinLeft .smallImg #imageMenu li { margin-top: 11px; border: 1px solid #B4B4B4; width: 70px; height: 70px; overflow: hidden; }
+
+.danpin_colLef .danpinLeft .smallImg #imageMenu li span { display: inline-block; width: 68px; height: 68px; border: 1px solid #fff; background-image: url(../img/joinimages.jpg); background-position: 0px -0px; }
+
+.danpin_colLef .danpinLeft .smallImg #imageMenu li span:hover { display: inline-block; width: 68px; height: 68px; border: 1px solid #a10000; }
+
+.danpin_colLef .danpinLeft .smallImg .downer { background-image: url(../img/sprite0725.png); background-position: -1927px 0; visibility: hidden; margin-top: 11px; height: 5px; width: 72px; overflow: hidden; }
+
+.danpin_colLef .danpinLeft .smallImg .smallImgDown { visibility: hidden; }
+
+.danpin_colLef .danpinColCenter { margin: 0 80px; width: 402px; float: right; display: inline; }
+
+.danpin_colLef .danpinColCenter .bigImg { width: 400px; height: 400px; margin-top: 7px; overflow: hidden; border: 1px solid #e5e6e6; position: relative; float: right; display: inline; }
+
+.danpin_colLef .danpinColCenter .bigImg #midimg { width: 400px; height: 400px; }
+
+.danpin_colLef .danpinColCenter .bigImg #winSelector { width: 220px; height: 200px; position: absolute; cursor: crosshair; opacity: 0.6; background-color: #e6eaf3; border: 1px solid White; display: none; }
+
+.danpinRight { width: 566px; display: inline; float: right; overflow: hidden; }
+
+.danpinRight .danpinfixedtitle { display: none; }
+
+.danpinRight .danpinFixedLeftContent { display: none; float: left; }
+
+.danpinRight .danpinFixedRightContent { float: left; margin-top: -6px; }
+
+.danpinRight .danpinFixedRightContent .blank10 { clear: both; display: block; font-size: 0; height: 10px; }
+
+.danpinRight .danpinFixedRightContent .cuxiaoPrice { color: #A10000; }
+
+.danpinRight .danpinFixedRightContent .cuxiaoPrice span { line-height: 26px; height: 26px; display: inline-block; color: #A10000; }
+
+.danpinRight .danpinFixedRightContent .cuxiaoPrice a { float: left; height: 26px; display: inline-block; margin-left: 20px; line-height: 26px; margin-top: 7px; color: #a10000; }
+
+.danpinRight .danpinFixedRightContent .cuxiaoPrice .tehuiMoney { float: left; }
+
+.danpinRight .danpinFixedRightContent .blank10 { clear: both; display: block; font-size: 0; height: 10px; overflow: hidden; }
+
+.danpinRight .danpinFixedRightContent .selectArea { margin-top: -2px; }
+
+.danpinRight .danpinFixedRightContent .selColorArea { position: relative; zoom: 1; }
+
+.danpinRight .danpinFixedRightContent .danpinColor_Select { overflow: hidden; }
+
+.danpinRight .danpinFixedRightContent .danpinColorTitle { float: left; color: #666666; line-height: 22px; padding-bottom: 10px; }
+
+.danpinRight .danpinFixedRightContent .selColor { width: 525px; }
+
+.danpinRight .danpinFixedRightContent .selColor { float: left; width: 445px; padding: 0px; }
+
+.danpinRight .danpinFixedRightContent .selColor ul li { cursor: pointer; border: 1px solid #B4B4B4; display: inline; float: left; height: 40px; margin: 0px 8px 8px 0px; width: 95px; position: relative; }
+
+.danpinRight .danpinFixedRightContent .selColor ul li:hover { border-color: #bb2b34; }
+
+.danpinRight .danpinFixedRightContent .selColor ul li .colorBlock { background: none repeat scroll 0 0 #FFFFFF; height: 38px; margin: 1px auto 0; width: 93px; }
+
+.danpinRight .danpinFixedRightContent .selColor ul li .colorBlock span { display: block; float: left; width: 36px; height: 36px; margin: 1px 0px 0px 1px; overflow: hidden; cursor: pointer; }
+
+.danpinRight .danpinFixedRightContent .selColor ul li .colorBlock .SpriteColors { background: url(../img/oj2.jpg); width: 36px; height: 36px; display: inline-block; float: left; }
+
+.danpinRight .danpinFixedRightContent .selColor ul li .colorBlock p { color: #666; display: inline; float: left; line-height: 16px; margin-left: 6px; padding-top: 4px; width: 46px; overflow: hidden; height: 34px; cursor: pointer; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea { overflow: hidden; margin-bottom: 15px; margin-top: 12px; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .danpinColorTitle { float: left; color: #666666; line-height: 22px; padding-bottom: 10px; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize { width: 335px; float: left; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize ul { margin: 0px; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize ul li { background: #FFFFFF; border: 1px solid #C8C8C8; color: #333333; cursor: pointer; padding: 0px; display: inline; float: left; height: 24px; line-height: 22px; margin-right: 5px; margin-bottom: 5px; text-align: center; position: relative; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize ul li:hover { border-color: #bb2b34; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize ul li span { width: 14px; height: 13px; background: url(../img/sprite0725.png) no-repeat scroll; background-position: -1151px 0; position: absolute; bottom: 1px; right: 1px; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize ul li p { display: block; float: left; height: 22px; margin: 1px 1px 0px 1px; background: #fff; padding: 0 9px; width: auto; }
+
+.danpinRight .danpinFixedRightContent .selSizeArea .selSize ul .blank8ie { clear: both; display: block; font-size: 1px; overflow: hidden; }
+
+.cuxiaoPrice, .cuxiaoPrice span { height: 26px; }
+
+.danpin_xuanzeGMcm { border: 1px solid #CC9998; width: 170px; height: 20px; margin-left: 36px; line-height: 19px; text-align: center; color: #999999; clear: both; margin-bottom: 5px; display: none; }
+
+.danpin_xuanzeGMcm span { height: 16px; display: block; width: 16px; background-position: -1911px 0pt; margin: 2px; float: left; }
+
+.danpin_xuanzeGMcm .sprites { background-image: url(../img/sprite0725.png); background-color: transparent; background-repeat: no-repeat; }
+
+.danpin_xuanzeGMcm p { color: #a10000; }
+
+.goodsNum { overflow: hidden; padding: 0px; }
+
+.goodsNum .danpinColorTitle { float: left; color: #666666; line-height: 22px; padding-bottom: 10px; }
+
+.goodsNum .danpinnumSelect { float: left; overflow: hidden; }
+
+.AreaItotal { padding-bottom: 15px; width: 400px; }
+
+.SelectGoods { height: 22px; }
+
+.SelectAreaItotal { width: 285px; float: left; }
+
+.goodsAddArea { position: relative; width: 400px; z-index: 0; background: none repeat scroll 0 0 transparent; border: 0px; padding: 0px; }
+
+.danpinColorTitle { float: left; color: #666666; line-height: 22px; padding-bottom: 10px; }
+
+.goodsAdd .SelectName, .goodsAdd .SelectSize { width: auto; max-width: 135px; overflow: hidden; }
+
+.goodsAdd .SelectName, .goodsAdd .SelectPoint, .goodsAdd .SelectSize, .goodsAdd .NowHasGoods { float: left; height: 22px; line-height: 22px; color: #666666; font-weight: bold; }
+
+.goodsAdd .NowHasGoods { color: #a10000; margin-left: 15px; }
+
+.goodsAdd span { display: inline; float: left; line-height: 20px; }
+
+.shoppingNews { float: left; }
+
+#nowbuy span { margin-left: 60px; margin-top: 9px; display: block; font-size: 14px; color: #A50309; }
+
+.btnnowbuy { background: #F7ABAF; width: 166px; height: 31px; display: block; float: left; margin-right: 13px; border: solid 1px #b71b21; }
+
+.btnaddtocart { background: url(../img/vanclsprite.png) no-repeat scroll -147px -285px; width: 168px; height: 33px; display: block; float: left; }
+
+#promotion { margin-top: 3px; }
+
+#promotion .danpin_YhTsBox { width: 400px; height: auto; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #A20000; }
+
+#promotion .danpin_YhTsBox li { line-height: 24px; color: #666666; }
+
+#promotion .danpin_YhTsBox h4 { height: 4px; line-height: 14px; margin-bottom: 6px; position: relative; width: 400px; color: #a20000; font-weight: bold; border-bottom: 1px solid #a20000; }
+
+.blank15 { display: block; width: 100%; height: 15px; line-height: 0px; font-size: 0px; clear: both; overflow: hidden; }
+
+.danpin_YhTsBox h4 { width: 400px; height: 30px; margin-bottom: 5px; line-height: 30px; color: #a20000; font-weight: bold; border-bottom: 1px solid #a20000; }
+
+.danpin_YhTsBox h4 span { display: inline-block; height: 14px; line-height: 14px; text-align: center; background: #ffffff; position: absolute; left: 167px; top: -4px; padding: 0 8px; }
+
+.blank20 { display: block; width: 100%; height: 20px; line-height: 0px; font-size: 0px; clear: both; overflow: hidden; }
+
+.selColor li .colorHoverok { display: block; width: 14px; height: 13px; background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll; background-position: -1151px 0; position: absolute; right: 1px; bottom: 1px; }
+
+.onlickColor { background: #a10000; border: 1px solid #a10000; }
+
+.cuxiaoPrice strong { font-family: Tahoma; font-size: 24px; }
+
+#ProductTitleHide { width: 100%; overflow: hidden; height: 45px; }
+
+.danpinTitleTab { border-bottom: 1px solid #e5e6e6; min-width: 980px; }
+
+.hideAddtoCar { top: 0; left: 0; position: fixed !important; background-color: #ffffff; z-index: 99000000000000; }

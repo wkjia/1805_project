@@ -146,6 +146,23 @@ require(['config'],function(){
                     $('.searchbarFoused').css('display','none')
                 })
                 
+                //点击跳转商品相应的详情页
+               $('.goods').on('click','li',function(){
+                    // console.log($(this))
+                    //获取this的相对应的啥商品信息
+                    var params = '';
+                    //利用索引值获取对应的商品信息
+                    var goods = xhr[$(this).index()];
+                    //遍历数据，写成url的字符串的模式
+                    for(var key in goods){
+                        params +=key + '='+goods[key] + '&';
+                    }
+                    //去掉url后面多余的&
+                    params = params.slice(0,-1);
+                    //将数据传递到详情页面
+                    location.href = 'goods.html?'+params;
+                    console.log(params)
+               })
 
             }
         })

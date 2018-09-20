@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/signIn.css" />
+</head>
+<body>
+    <div class="big">
+        <div class="container">
+            <div id="top">
+                <img src="../img/logo_new.jpg" alt="凡客诚品" title="凡客诚品" style="cursor:pointer">
+                <h2 class="fl" style="text-indent:-1000px;">凡客</h2>
+            </div>
+            <!--  -->
+            <form method="post" action="#" id="myform">
+                <span class="box15"></span>
+                <div class="regist">
+                    <div style="overflow:hidden;" class="tl">
+                        <h1> 注册新用户 
+                            <span>我已经注册，现在就
+                                <a href="#">登录</a>
+                            </span>
+                        </h1>  
+                    </div>
+                
+                    <div class="content_l">
+                        <img src="../img/login120412_newlogo.jpg" style="width: 465px">
+                    </div>
+
+
+                    <div class="content_r">
+                        <ul class="signIn">
+                            <li class="ip1 bd1 clearfix">
+                                <input type="text" class="ip1_l" placeholder="验证码"/>
+                                <img src="../img/CalculateValidateCode.jpg" alt="" class="ip1_r" /><span class="tishi"></span>
+
+                            </li>
+                            <li class="ip1 bd2 clearfix">
+                                <input type="text" class="ip1_l" placeholder="请输入手机号"/>
+                                <button class="ip1_r bt">获取短信验证码</button>
+                                <span class="tishi"></span>
+
+                            </li>
+                            <li class="ip1 bd3 clearfix">
+                                <input type="text" class="ip1_l msg" placeholder="填写手机验证码"/>
+                                <span class="tishi"></span>
+                            </li>
+                            <li class="ip1 bd4 clearfix">
+                                <input type="text" class="ip1_l msg" placeholder="设置登录密码"/>
+                                <span class="tishi"></span>
+                            </li>
+                            <li class="ip1 bd5 clearfix">
+                                <input type="text" class="ip1_l msg" placeholder="再次输入密码"/>
+                                <span class="tishi"></span>
+                            </li>
+                            <li class="bd6 clearfix">
+                                <div class="zhuce">
+                                    <span>
+                                        <input id="chk_agreen" type="checkbox">
+                                        <label for="chk_agreen" style="width: 100%; float: none;font-size:12px;">
+                                        请阅读<a target="_blank" href="#" class="reda10_ft12">《VANCL凡客诚品服务条款》</a>
+                                        </label>
+                                    </span>
+                                    <span class="box10"></span>
+                                    <div id="submitRegister_false" class="submitStyle" style="background: #9A9A9A; color: #FFFFFF;">
+                                        立即注册</div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+             </form>
+            <!--  -->
+        </div>
+    </div>
+    <script src="../js/require.js" type="text/javascript" data-main="../js/signIn"></script>
+</body>
+</html>

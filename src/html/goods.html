@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <title>商品详情页</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/goods.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/goods.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery-lxzoom/jquery.lxzoom.css" />
 </head>
 <body>
     <header id="gd_header">
@@ -15,52 +16,321 @@
         
     </nav>
     <main id="gd_main">
-        <!--  -->
         <div class="danpinBox">
-            <input id="CustomerMade" type="hidden" value="NoMade">
-            <a name="top"></a>
-            <span class="blank10"></span>
-            <div class="breadNav">
-                <a href="#" title="首页" name="nav">首页</a>
-                <span>&gt;</span>
-                <a href="#" title="男装">男装</a>
-                <span>&gt;</span>
-                <a href="#" title="衬衫">衬衫</a>
-                <span>&gt;</span>
-                <a href="#" title="长袖衬衫">长袖衬衫</a>
-                <span>&gt;</span>
-                <input id="mainCategories" type="hidden" value="27531,27544,28806">
-                <span id="styleinfo" name="1068393">凡客衬衫 吉国武 免烫 温莎领 4.0</span>
-            </div>
-            <span class="blank0"></span>
-            <div class="danpinArea">
-                <div id="ProductTitleShow" class="danpinTitleTab newclear">
-                    <div id="productTitle">
-                        <div class="brandNumArea">
-                            <span id="productcode">商品编号：6379508</span>
+            <div class="container">
+                <input id="CustomerMade" type="hidden" value="NoMade">
+                <a name="top"></a>
+                <span class="blank10"></span>
+                <div class="breadNav">
+                    <a href="#" title="首页" name="nav" class="sy">首页</a>
+                    <span>&gt;</span>
+                    <a href="#" title="男装" class="nz">男装</a>
+                    <span>&gt;</span>
+                    <a href="#" title="衬衫" class="cs">衬衫</a>
+                    <span>&gt;</span>
+                    <a href="#" title="长袖衬衫" class="cx">长袖衬衫</a>
+                    <span>&gt;</span>
+                    <input id="mainCategories" type="hidden" value="27531,27544,28806">
+                    <span id="styleinfo" name="1068393"></span>
+                </div>
+                <span class="blank0"></span>
+                <div class="danpinArea">
+                    <div id="ProductTitleShow" class="danpinTitleTab newclear">
+                        <div id="productTitle">
+                            <div class="brandNumArea">
+                                <span id="productcode">商品编号：6379508</span>
+                            </div>
+                            <h2 class="biaoti">凡客衬衫 吉国武 免烫 温莎领 4.0 灰底白条纹
+                            </h2>
+                            <ul class="ProductSubnav fr" id="ItemTag">
+                                <li><a href="#mtdp">模特搭配</a>|</li>
+                                <li><a href="#gmzn">购买指南</a>|</li>
+                                <li><a href="#rsmt">日式免烫</a>|</li>
+                                <li><a href="#xdby">洗涤保养</a>|</li>
+                                <li><a href="#anchorPinglun">评论</a>|</li>
+                                <li><a href="#anchorQuiz">提问</a></li>
+                            </ul>
                         </div>
-                        <h2 title="凡客衬衫 吉国武 免烫 温莎领 4.0 浅蓝">凡客衬衫 吉国武 免烫 温莎领 4.0 灰底白条纹
-                            <span>充值购买更优惠</span>
-                        </h2>
-                        <ul class="ProductSubnav fr" id="ItemTag">
-                            <li><a href="#mtdp">模特搭配</a>|</li>
-                            <li><a href="#gmzn">购买指南</a>|</li>
-                            <li><a href="#rsmt">日式免烫</a>|</li>
-                            <li><a href="#xdby">洗涤保养</a>|</li>
-                            <li><a href="#anchorPinglun">评论</a>|</li>
-                            <li><a href="#anchorQuiz">提问</a></li>
-                        </ul>
+                        <span class="blank30"></span>
                     </div>
-                    <span class="blank30"></span>
                 </div>
             </div>
         </div>
-        <!--  -->
+        <div class="xiangq">
+            <div class="container">
+                <span class="blank30"></span>
+                <div class="danpin_colLef">
+                    <div class="danpinLeft">
+                        <div class="smallImg">
+                            <div class="smallImgUp upper">
+                            </div>
+                            <ul id="imageMenu">
+                                
+                                <li name="item-item-img-1" class="track" id="onlickImg">
+                                    <span class="SpriteSmallImgs">&nbsp;</span> </li>
+                                
+                                <li name="item-item-img-2" class="track">
+                                    <span class="SpriteSmallImgs" style="background-position: 0px -68px">&nbsp;</span> </li>
+                                
+                                <li name="item-item-img-3" class="track">
+                                    <span class="SpriteSmallImgs" style="background-position: 0px -136px">&nbsp;</span> </li>
+                                
+                            </ul>
+                            <div class="smallImgDown downer" style="visibility: hidden">
+                            </div>
+                        </div>
+                    </div>
+                <!-- 放大镜的图片 -->
+                    <div class="danpinColCenter">
+                        <div class="bigImg goods" id="vertical">
+                            
+                            <img id="midimg" width="440px" height="440px"/>
+                            <div id="winSelector">
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="danpinRight">
+                    <div class="danpinFixedRightContent">
+                        <div name="Normal" id="pricearea">
+                            <input id="shopid" type="hidden" value="10258">
+                            <span class="blank10"></span>
+                            <div class="cuxiaoPrice ">
+                                <input id="Hidden1" type="hidden" value="NoMade">
+                                <input id="hidattr" type="hidden" value="0">
+                                <input id="hidyue" type="hidden" value="False">
+                                <span class="tehuiMoney" style="line-height: 26px;">
+                                    <span style="font-family: '微软雅黑';">￥</span>
+                                    <span><strong class="jg"></strong></span>
+                                </span>
+                                <a id="czwenan" href="#">充100返100，点击充值</a>
+                                <div class="MemberGrade" style="display: none;">
+                                    <span>vip/svip价</span>
+                                    <div class="MemberGradeList">
+                                        <ul>
+                                            <li>vip价：￥586.04</li>
+                                            <li>svip价：￥568.10</li>
+                                            <li><a href="http://help.vancl.com/Category/14-1.html" target="_blank">了解详情</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="blank10"></span>
+                        </div>
+
+                        <div class="selectArea">
+                            <div class="selColorArea">
+                                <span class="blank10"></span>
+                                <a id="colorlist"></a>
+                                <div class="danpinColor_Select">
+                                    <div class="danpinColorTitle" style="line-height: 18px;">
+                                        <p> 颜色：</p>
+                                    </div>
+                                    <div class="selColor">
+                                        <ul>
+                                            <li name="6382339" title="浅蓝" class="">
+                                                <div class="colorBlock" name="False">
+                                                    <a class="track" style="background-position: 0px -0px">
+                                                        <span class="SpriteColors">&nbsp;</span>
+                                                        <p>浅蓝</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li name="6379500" title="白色" class="">
+                                                <div class="colorBlock">
+                                                    <a class="track" >
+                                                        <span class="SpriteColors">&nbsp;</span>
+                                                        <p>白色</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li name="6379501" title="蓝色" class="">
+                                                <div class="colorBlock" name="False">
+                                                    <a class="track" >
+                                                        <span class="SpriteColors">&nbsp;</span>
+                                                        <p>蓝色</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li name="6379502" title="浅紫" class="">
+                                                <div class="colorBlock" name="False">
+                                                    <a class="track">
+                                                        <span class="SpriteColors">&nbsp;</span>
+                                                        <p>浅紫</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li name="6379507" title="蓝底白条纹" class="">
+                                                <div class="colorBlock" name="False">
+                                                    <a class="track" name="item-item-select-color_5" >
+                                                        <span class="SpriteColors">&nbsp;</span>
+                                                        <p>蓝底白条纹</p>  
+                                                    </a>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="selSizeArea">
+                                    <div class="danpinColorTitle">
+                                        <p>
+                                            尺码：</p>
+                                    </div>
+                                    <div class="selSize">
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    S</p>
+                                                </li>
+                                            <li>
+                                                <p>
+                                                    M</p>
+                                                </li>
+                                            <li>
+                                                <p>
+                                                    L</p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    XL</p>
+                                            </li>   
+                                            <li>
+                                                <p>
+                                                    XXL</p>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="danpin_xuanzeGMcm">
+                                        <span class="sprites"></span>
+                                        <p>请选择您要购买的商品尺码</p>   
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="goodsNum">
+                                    <div class="danpinColorTitle">
+                                        <p>
+                                            数量：</p>
+                                    </div>
+                                    <div class="danpinnumSelect">
+                                        <select id="selectedAmount">
+                                            
+                                            <option value="1">
+                                                1</option>
+                                            
+                                            <option value="2">
+                                                2</option>
+                                            
+                                            <option value="3">
+                                                3</option>
+                                            
+                                            <option value="4">
+                                                4</option>
+                                            
+                                            <option value="5">
+                                                5</option>
+                                            
+                                            <option value="6">
+                                                6</option>
+                                            
+                                            <option value="7">
+                                                7</option>
+                                            
+                                            <option value="8">
+                                                8</option>
+                                            
+                                            <option value="9">
+                                                9</option>
+                                            
+                                            <option value="10">
+                                                10</option>
+                                        </select>
+                                        <span id="comeon" class="LastNum">余量有限</span>
+                                        <span class="blank15"></span>
+                                    </div>
+                                </div>
+                                <div class="AreaItotal SelectGoods">
+                                    <div class="SelectAreaItotal SelectGoods">
+                                        <div class="goodsAddArea SelectGoods">
+                                            <div class="danpinColorTitle">
+                                                <p class="SelectDetail">
+                                                    已选：</p>
+                                            </div>
+                                            <div class="goodsAdd">
+                                                <p class="SelectName">蓝底白条纹</p>
+                                                <span class="SelectPoint">，</span><p class="SelectSize">
+                                                </p>
+                                                <p class="NowHasGoods">
+                                                    现在有货</p>
+                                                <span class="blank0"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="shoppingNews">
+                                    <a id="nowbuy"class="btnnowbuy track">
+                                        <span>立即购买</span>
+                                    </a>
+                                    <a id="addToShoppingCar" href="#" class="btnaddtocart track"></a>
+                                </div>
+                                <span class="blank20"></span>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="promotion">
+                            <div class="danpin_YhTsBox danpin_YhTsTab ">
+                                <h4>
+                                    <span>优惠提示</span>
+                                </h4>
+                                <ul>
+                                    <li style="background: none; padding-left: 0;">
+                                        <span style="display: block; float: left;
+                                            width: auto; height: 16px; background: #b81c22; margin: 4px 5px 0  0; color: #fff;
+                                            line-height: 16px; text-align: center; padding: 0 5px;">
+                                            免邮
+                                        </span>
+                                         全场购物满199元免运费 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="server"></div>
+        <!-- 吸顶菜单 -->
+        <div id="ProductTitleHide" class="danpinTitleTab newclear hideAddtoCar cd">
+            <h2>
+                凡客衬衫 吉国武 免烫 温莎领 4.0 白色
+                <span style="margin-left: 10px; font-size: 14px; font-weight: bold; color: #a10000;">充值购买更优惠</span>
+            </h2>
+            <div class="AddtoCar fr">
+                <a class="cartab" id="hidCartab"></a>
+            </div>
+            <ul class="ProductSubnav fr" id="ItemTagFixed">
+                <li><a>模特搭配</a>|</li>
+                <li><a>购买指南</a>|</li>
+                <li><a>日式免烫</a>|</li>
+                <li><a>洗涤保养</a>|</li>
+                <li><a>评论</a>|</li>
+                <li><a>提问</a></li>
+            </ul>
+        </div>
+        <!--  -->
+        <div class="itemtagcontentpart">
+            <img src="../img/bg.png"/>
+            <img src="../img/bg2.png"/>
+        </div>
     </main>
     <footer id="gd_footer">
         
     </footer>
+    <!-- 放大镜 -->
     <script src="../js/require.js" type="text/javascript" data-main="../js/goods"></script>
 </body>
 </html>

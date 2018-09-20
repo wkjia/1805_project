@@ -7,6 +7,7 @@
 		* 系列插件
  */
 
+
 ;(function($){
 	// $.prototype === $.fn
 	$.prototype.lxzoom = function(options){
@@ -15,7 +16,7 @@
 		var defaults = {
 			// 大图区域宽高
 			width:300,
-			height:200,
+			height:400,
 
 			// 位置：right,bottom,left,top
 			position:'right',
@@ -78,7 +79,7 @@
 			$big.css({
 				width:opt.width,
 				height:opt.height,
-				top:bigTop,
+				top:250,
 				left:bigLeft
 			});
 
@@ -100,6 +101,7 @@
 
 				// 获取大图url
 				var bigUrl = $smallImg.attr('data-big');
+				// console.log(bigUrl)
 				/*
 					大图相关
 				 */

@@ -11,7 +11,10 @@ require.config({
         'common':'../lib/common',
         'carousel':'/js/carousel',
         'goodsList':'js/goodsList',
-        'goods':'js/goods'
+        'goods':'js/goods',
+        'jquery.lxzoom':'../lib/jquery-lxzoom/jquery.lxzoom',
+        'register':'js/register',
+        'signIn':'js/signIn',
 
     },
 
@@ -23,7 +26,10 @@ require.config({
         'bootstrap':['jquery'],
         'carousel':['common'],
         'goodsList':['index'],
-        'goods':['jquery']
+        'goods':['jquery'],
+        'jquery.lxzoom':['jquery'],
+        'signIn':['jquery'],
+        'register':['jquery']
     },
 
 

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.container { width: 1200px; font-size: 12px; color: #727171; }
+
+a { color: #727171; }
+
+em, strong, th { font-style: normal; font-weight: normal; }
+
+a:link, a:visited { color: #333; text-decoration: none; }
+
+body { font-size: 12px; font-family: "宋体"; color: #333; }
+
+#top { margin: 10px 0 0 0; padding: 0 0 10px 0; border-bottom: solid 1px #919191; }
+
+#top h2 { text-indent: -10000px; }
+
+.box3, .box7, .box10, .box15, .box20, .box30, .box40, .box50, .box80 { height: 7px; line-height: 0; font-size: 0; clear: both; display: block; }
+
+.box15 { height: 15px; }
+
+.regist { margin-top: 30px; }
+
+.regist { overflow: hidden; }
+
+.tl { margin-bottom: 10px; }
+
+h1 { height: 35px; width: 415px; float: right; line-height: 35px; margin: 0 100px 0 0; border-bottom: 2px solid #b81e20; font-size: 20px; color: #a2a2a2; font-weight: bolder; }
+
+h1 span { font-size: 14px; float: right; color: #a2a2a2; font-weight: bolder; }
+
+h1 span a { color: #b52024; margin: 0 0 0 3px; }
+
+.content_l { width: 465px; height: 500px; float: left; margin: 0 0 0 130px; }
+
+.content_r { width: 415px; float: right; margin: 10px 95px 0 0; }
+
+.signIn li { margin-top: 15px; position: relative; }
+
+.signIn .ip1_l { box-sizing: border-box; display: block; height: 45px; width: 264px; border: 1px solid #ccc; float: left; padding-left: 8px; }
+
+.signIn .ip1_r { box-sizing: border-box; display: block; height: 45px; width: 140px; border: 1px solid #ccc; float: left; margin-left: 10px; }
+
+.signIn .bt { background: #f5f5f5; color: #bb2b34; }
+
+.signIn .bd3, .signIn .bd4, .signIn .bd5 { width: 100%; }
+
+.signIn .bd3 .msg, .signIn .bd4 .msg, .signIn .bd5 .msg { width: 100%; }
+
+.signIn .tishi { color: #a10000; border: 1px #ffd5d5 solid; padding: 3px 5px; position: absolute; left: 0px; z-index: 20; background: #f9f9f9; top: 46px; display: none; }
+
+.signIn .bd6 { width: 100%; }
+
+.signIn .bd6 .zhuce { margin-top: 10px; }
+
+.signIn .bd6 .zhuce span { color: #9d9d9d; font-size: 14px; font-weight: bolder; line-height: 12px; margin: 0 0 10px 0; }
+
+.signIn .bd6 .zhuce span a { font-size: 12px; color: #b52024 !important; font-weight: bolder; }
+
+.signIn .submitStyle { /* padding: 1px; */ clear: both; width: 100%; height: 45px; line-height: 45px; text-align: center; background: #b52024; border: 0; color: #fff; cursor: pointer; clear: both; font-size: 16px; font-weight: bolder; }
