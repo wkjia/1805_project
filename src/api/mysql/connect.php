@@ -25,5 +25,6 @@
      // $sql = "select * from mt_goods";
      // $result = $conn->query($sql);
      // print_r($result)
+    $conn ->set_charset('utf8');
 
 ?>

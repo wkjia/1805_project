@@ -83,6 +83,8 @@
         box-sizing:border-box;
         display:block;
         height:45px;
+        line-height: 45px;
+        text-align: center;
         width:140px;
         border:1px solid #ccc;
         float:left;
@@ -145,4 +147,26 @@
 }
 
     
+}
+
+.v2reg_Safetyinfo {
+    float: left;
+    line-height: 22px;
+    color: #666;
+    display:none;
+}
+.v2regfl, .v2regimg_01 {
+    float: left;
+}
+.v2regimg_01 {
+    width: 140px;
+    float: left;
+    height: 12px;
+    overflow: hidden;
+    background: url(../img/sprite_a.png) no-repeat 0 -1097px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.v2reg_Class {
+    float: left;
 }

@@ -1,4 +1,4 @@
- console.log(666)
+ // console.log(666)
  var Carousel = function (options) {
                 //属性
                 //默认值,如果没有传就用默认的,传了就用
@@ -19,7 +19,7 @@
                 this.opt = Object.assign({}, defaults, options);
 
                 this.init();
-                console.log(this);//Carousel
+                // console.log(this);//Carousel
             }
 
             //方法
@@ -66,7 +66,7 @@
                     ul.style.height = opt.height + 'px';
                 }
 
-                console.log(ul.style.width)//1200;
+                // console.log(ul.style.width)//1200;
 
                 //写入页面
                 ele.appendChild(ul);
