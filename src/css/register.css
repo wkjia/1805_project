@@ -8,3 +8,71 @@ em, strong, th { font-style: normal; font-weight: normal; }
 a:link, a:visited { color: #333; text-decoration: none; }
 
 body { font-size: 12px; font-family: "宋体"; color: #333; }
+
+.content_r { width: 400px; border: 1px solid #D1D1D1; background-color: #fff; float: right; margin-top: 18px; margin-bottom: 20px; margin-right: 100px; }
+
+.content_r .qiehuan { overflow: hidden; }
+
+.content_r .qiehuan li { width: 200px; height: 35px; line-height: 35px; float: left; text-align: center; background: #f5f5f5; color: #656565; cursor: pointer; font-size: 14px; }
+
+.content_r .qiehuan li:nth-child(1) { background: #bb2b34; color: white; font-weight: bold; }
+
+.content_r .input { padding: 10px 20px 10px; display: none; }
+
+.content_r .input li { height: 45px; width: 100%; }
+
+.content_r .input .input1 input { height: 45px; width: 248px; line-height: 45px; color: #656565; display: inline-block; text-align: left; text-indent: 10px; z-index: 9; border: 0 none; font-size: 14px; border: 1px solid #ccc; float: left; }
+
+.content_r .input .input1 .msg { width: 97px; height: 45px; text-align: center; line-height: 45px; background: #f5f5f5; color: #b52024 !important; border: solid 1px #cbcbcb; display: block; float: left; margin: 0 0 0 10px; font-weight: bolder; font-size: 12px; }
+
+.content_r .input .input2 { margin-top: 18px; }
+
+.content_r .input .input2 input { display: block; width: 144px; height: 45px; line-height: 45px; color: #656565; display: inline-block; text-align: left; text-indent: 10px; z-index: 9; border: 0 none; font-size: 14px; border: 1px solid #ccc; float: left; }
+
+.content_r .input .input2 .d_yzm { float: left; width: 130px; height: 45px; border: 1px solid #ccc; border-left: 0 none; line-height: 45px; text-align: center; }
+
+.content_r .input .input2 .h_yzm { cursor: pointer; float: right; line-height: 18px; color: black; }
+
+.content_r .input .input3 { margin-top: 18px; }
+
+.content_r .input .input3 input { text-indent: 10px; height: 45px; display: inline-block; width: 360px; border: 1px solid #ccc; }
+
+.content_r .input .input4 { margin-top: 18px; margin-bottom: 30px; }
+
+.content_r .input .input4:hover { font-weight: bold; }
+
+.content_r .input .input4 div { width: 360px; height: 45px; float: left; text-align: center; border: 1px solid #ccc; line-height: 45px; font-size: 20px; color: white; background: #bb2b34; }
+
+.content_r .pt { overflow: hidden; }
+
+.content_r .pt .normal { overflow: hidden; padding: 10px 20px 10px; }
+
+.content_r .pt .normal li { height: 45px; width: 100%; margin-top: 20px; }
+
+.content_r .pt .normal li input { height: 45px; width: 360px; line-height: 45px; color: #656565; display: inline-block; text-align: left; text-indent: 10px; z-index: 9; border: 0 none; font-size: 14px; border: 1px solid #ccc; float: left; }
+
+.content_r .pt .find { float: right; margin-top: 20px; margin-right: 20px; margin-bottom: 10px; font-weight: bold; color: #bb2b34; }
+
+.content_r .pt .denglu { width: 360px; height: 45px; background: #bb2b34; float: left; text-align: center; line-height: 45px; margin-left: 20px; font-size: 20px; color: white; margin-bottom: 40px; }
+
+.content_r .pt .denglu:hover { font-weight: bold; }
+
+.content_r .gulp { border-top: 1px dashed #ccc; }
+
+.content_r .gulp .div_c { width: 360px; height: auto; margin: 10px auto; }
+
+.content_r .gulp .div_c .hezuo { color: #a4a4a4; line-height: 14px; font-size: 14px; font-weight: bolder; margin-top: 10px; }
+
+.content_r .gulp .div_c .qkimg a { width: 33px; height: 33px; display: block; float: left; margin: 0 10px 0 0; background: url(../img/logos.jpg) no-repeat left center; margin-bottom: 20px; margin-top: 10px; }
+
+.content_r .gulp .div_c .qkimg .weixin { background-position: 0px 0px; }
+
+.content_r .gulp .div_c .qkimg .xiaomi { background-position: -147px 0px; }
+
+.content_r .gulp .div_c .qkimg .zhifubao { background-position: -48px 0px; }
+
+.content_r .gulp .div_c .qkimg .qq { background-position: -189px 0px; }
+
+.content_r .gulp .div_c .qkimg .qihu360 { background-position: -228px 0px; }
+
+.content_r .gulp .div_c .qkimg .weibo { background-position: -93px 0px; width: 36px; }

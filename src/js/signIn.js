@@ -1,6 +1,9 @@
 require(['config'],function(){
     require(['jquery','common'],function($){
 
+
+        //引入底部的公共部分
+        $('.smallbox').load('common.html #last');
         //生成随机字母验证码
             yzm()
         function yzm(){

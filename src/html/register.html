@@ -3,8 +3,100 @@
 <head>
     <meta charset="UTF-8" />
     <title>登录页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/signIn.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
 </head>
 <body>
-    
+    <div class="big">
+        <div class="container">
+            <div id="top">
+                <img src="../img/logo_new.jpg" alt="凡客诚品" title="凡客诚品" style="cursor:pointer">
+                <h2 class="fl" style="text-indent:-1000px;">凡客</h2>
+            </div>
+            <!--  -->
+            <form method="post" action="#" id="myform">
+                <span class="box15"></span>
+                <div class="regist">
+                    <div style="overflow:hidden;" class="tl">
+                        <h1> 凡客 Vancl 登录
+                            <span>没有账户免费
+                                <a href="#">注册</a>
+                            </span>
+                        </h1>  
+                    </div>
+                
+                    <div class="content_l">
+                        <img src="../img/login120412_newlogo.jpg" style="width: 465px">
+                    </div>
+
+                    <!-- 登录框 -->
+                    <div class="content_r">
+                        <ul class="qiehuan">
+                            <li class="qiehuan1">普通登录</li>
+                            <li class="qiehuan2">快速登录</li>
+                        </ul>
+                        <ul class="input">
+                            <li class="input1">
+                                <label for="number"></label>
+                                <input type="text" placeholder="请输入手机号" id="number" />
+                                <div class="msg">获取短信验证码</div>
+                            </li>
+                            <li class="input2">
+                                <input type="text" class="yzm" placeholder="验证码"/>
+                                <div class="d_yzm"></div>
+                                <span class="h_yzm">看不清?换一张</span>
+                            </li>
+                            <li class="input3">
+                                <input type="text" placeholder="请输入手机验证码"/>
+                            </li>
+                            <li class="input4">
+                                <div class="denglu">
+                                    <span>登录</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pt">
+                            <ul class="normal">
+                                <li class="num">
+                                    <input type="text" placeholder="请输入用户名" class="number2" />
+                                </li>
+                                <li class="psd">
+                                    <input type="text" placeholder="请输入密码" class="password2" />
+                                </li>
+                                <span class="tishi"></span>
+                            </ul> 
+                            <div class="find">
+                                找回密码
+                            </div>
+                            <div class="denglu">
+                                <span>登录</span>
+                            </div>
+                        </div>
+                        <div class="gulp">
+                            <div class="div_c">
+                                <h2 class="hezuo">使用合作网站账号登录凡客</h2>
+                                <p class="qkimg">
+                                    <a href="#" id="a_wxlogin" class="weixin"></a>
+                                    <a class="xiaomi"></a>
+                                    <a href="#" class="zhifubao"></a>
+                                    <a class="qq" href="#"></a>
+                                    <a class="qihu360" href="#"></a>
+                                    <a class="weibo" href="#"></a>
+                                </p>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+             </form>
+            <!--  -->
+        </div>
+    </div>
+    <div class="smallbox">
+        
+    </div>
+    <script src="../js/require.js" type="text/javascript" data-main="../js/register"></script>
 </body>
 </html>
