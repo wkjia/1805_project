@@ -1,12 +1,28 @@
 //引入模块
-require(['config'],function(){
+;require(['config'],function(){
 
     require(['jquery','bootstrap','common','carousel'],function($){
 
+        //点击免烫按钮跳转详情页面
+        $('.subNav').on('click','li',function(){
+            if($(this).text()=='免烫'){
+                location.href = '../html/goodsList.html'
+            }
+        })
+        //点击登录注册按钮，跳转到登录注册页面
+        $('span').on('click','a',function(){
+            if($(this)[0]==$('.denglu')[0]){
+                location.href = '../html/signIn.html';
+            }
+            if($(this)[0]==$('.zhuc')[0]){
+                location.href = '../html/register.html';
+            }
+        })
+        
         //接收登录页面传递过来的参数
         var params = decodeURI(location.search);
-        params = params.slice(1);
-        console.log(params)
+        params = params.slice(1,12);
+        // console.log(params)
         if(params!=''){
             $('.top').text( params)
             $('.denglu').text('退出登录')
@@ -111,7 +127,16 @@ require(['config'],function(){
             //  time()
         }
 
+        //鼠标移入，生成购物车信息
+        // $('.active').mouseover(function(){
+        //     //读取在详情页所存储的cookie信息
+        //     var carList = Cookie.get('carList');
+        //     console.log(document.cookie)
+        // })
+
+        // 读取cookie信息，，写入购物车列表
+        // var goods_l = Cookie.get('cc',{Path:'/html'});
         
-        
+        // console.log(goods_l)
     })
-})
+});

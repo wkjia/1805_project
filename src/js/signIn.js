@@ -1,4 +1,4 @@
-require(['config'],function(){
+;require(['config'],function(){
     require(['jquery','common'],function($){
 
 
@@ -257,4 +257,4 @@ require(['config'],function(){
 
 
     })
-})
+});

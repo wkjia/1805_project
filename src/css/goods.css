@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.danpin_colLef .danpinLeft .smallImg .smallImgUp, .danpin_colLef .danpinLeft .smallImg .downer { cursor: pointer; }
+#addToShoppingCar, .danpin_colLef .danpinLeft .smallImg .smallImgUp, .danpin_colLef .danpinLeft .smallImg .downer { cursor: pointer; }
 
 .container { width: 1200px; font-size: 12px; color: #727171; }
 
@@ -143,7 +143,7 @@ body { font-size: 12px; font-family: "宋体"; color: #333; }
 
 .danpin_xuanzeGMcm p { color: #a10000; }
 
-.goodsNum { overflow: hidden; padding: 0px; }
+.goodsNum { overflow: hidden; padding: 0px; position: relative; }
 
 .goodsNum .danpinColorTitle { float: left; color: #666666; line-height: 22px; padding-bottom: 10px; }
 
@@ -202,3 +202,55 @@ body { font-size: 12px; font-family: "宋体"; color: #333; }
 .danpinTitleTab { border-bottom: 1px solid #e5e6e6; min-width: 980px; }
 
 .hideAddtoCar { top: 0; left: 0; position: fixed !important; background-color: #ffffff; z-index: 99000000000000; }
+
+.carlist { width: 498px; border: 1px solid #b81b22; background-color: #FFFFFF; left: 0px; bottom: 0px; position: absolute; z-index: 2000000; padding-bottom: 70px; overflow: hidden; display: none; }
+
+.carlist #carboxloading { text-align: center; padding-top: 130px; padding-bottom: 130px; display: none; }
+
+.carlist .c_title { height: 42px; background: #b81b22; width: 100%; }
+
+.carlist .c_title span { padding-left: 30px; line-height: 42px; font-size: 16px; color: #ffffff; }
+
+.carlist .c_title .close { padding-left: 0; display: block; width: 16px; height: 16px; margin-top: 13px; margin-right: 27px; cursor: pointer; background: url(../img/vanclsprite.png) no-repeat scroll -369px -113px; }
+
+.carlist .CarBox_Content { height: 95px; margin: 0px 28px; border-bottom: 1px dotted #727171; }
+
+.carlist .CarBox_Content .CarBox_bg { width: 74px; height: 74px; padding-right: 18px; float: left; background: url(../img/vanclsprite.png) no-repeat scroll -232px -119px; }
+
+.carlist .CarBox_Content .CarBox_NumPrice { width: 180px; height: auto; float: left; }
+
+.carlist .CarBox_Content .CarBox_NumPrice .line01 { display: block; width: 1px; height: 36px; line-height: 0px; font-size: 0px; margin-top: 19px; margin-right: 15px; background: #b81c22; overflow: hidden; }
+
+.carlist .CarBox_Content .CarBox_NumPrice div { height: auto; width: 158px; }
+
+.carlist .CarBox_Content .CarBox_NumPrice p { line-height: 22px; }
+
+.carlist .CarBox_Content .CarBox_NumPrice p span { margin: 0px 3px; display: block; float: left; line-height: 22px; font-size: 14px; color: #000000; }
+
+.carlist .CarBox_Content .CarBox_NumPrice p #shopcarcount { color: #b81c22; }
+
+.carlist .CarBox_Content .CarBox_NumPrice p .CarBox_TotialPrice span { margin: 0px; font-size: 14px; float: left; }
+
+.carlist .CarBox_Content .CarBox_NumPrice p #shopcarprice { color: #b81c22; }
+
+.carlist .CarBox_Btn { padding-top: 19px; float: right; }
+
+.CarBox_nowCheckout, .CarBox_goCar { border: none; height: 32px; cursor: pointer; font-weight: bold; font-size: 14px; color: #ffffff; text-align: center; line-height: 32px; }
+
+.CarBox_goCar { width: 82px; }
+
+.CarBox_Btn, .CarBox_goCar, .CarBox_nowCheckout, .CarBox_continueShopping { float: right; }
+
+.CarBox_nowCheckout a:link, .CarBox_nowCheckout a:visited, .CarBox_nowCheckout a:hover, .CarBox_goCar a:link, .CarBox_goCar a:visited, .CarBox_goCar a:hover { background: #b81c22; color: #ffffff; }
+
+.CarBox_goCar a { display: inline-block; height: 32px; width: 82px; }
+
+.CarBox_nowCheckout { width: 84px; background: url(../img/sprite0725.png) no-repeat scroll -1783px -211px; }
+
+.CarBox_nowCheckout a { display: inline-block; height: 32px; width: 84px; }
+
+.CarBox_nowContinueBuy a:link, .CarBox_nowContinueBuy a:visited, .CarBox_nowContinueBuy a:hover { background: #efefef; color: #727171; }
+
+.CarBox_ProductList { width: 460px; height: auto; margin: 0px 28px; }
+
+.CarBox_ProductList h2 { width: 445px; height: 32px; line-height: 32px; color: #999999; }

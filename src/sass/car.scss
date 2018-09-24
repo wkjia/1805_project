@@ -1,0 +1,47 @@
+@import 'var';
+
+.container{width:980px;}
+#top {
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: solid 1px #919191;
+    p{
+        height:59px;line-height: 59px;
+    }
+}
+
+#location {
+    background: url(../img/newProm.gif);
+    background-position: 0 0;
+    height: 28px;
+    width: 540px;
+    margin-top: 10px;
+}
+#location em, #location span {
+    color: #666;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    width: 170px;
+}
+#location em, #location em a {
+    color: #fff;
+}
+#cart-empty, .cart-loading {
+    color: Gray;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+.cuxiao, #gift {
+    clear: both;
+    padding-top: 30px;
+}
+#cart-empty a {
+    color: #A10000;
+    text-decoration: underline;
+}
+

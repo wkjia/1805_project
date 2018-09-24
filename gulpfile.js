@@ -1,8 +1,8 @@
 // 引入
 let gulp = require('gulp');
-let uglify = require('gulp-uglify');
-let concat = require('gulp-concat');
-let rename = require('gulp-rename');
+// let uglify = require('gulp-uglify');
+// let concat = require('gulp-concat');
+// let rename = require('gulp-rename');
 let pump = require('pump');
 let babel = require('gulp-babel');
 let sass = require('gulp-sass');
@@ -85,4 +85,58 @@ gulp.task('server',function(){
 
 	// 监听sass修改
 	gulp.watch('./src/sass/*.scss',['compileSass']);
+});
+
+
+
+
+
+
+
+//布置任务：压缩css文件
+var cssmin=require('gulp-cssmin');
+
+gulp.task('cssmin',function(){
+	return gulp.src('./src/css/*.css')
+			   .pipe(cssmin())
+			   .pipe(gulp.dest('./src/dist'));
+});
+
+// //布置任务：重命名
+var rename=require('gulp-rename');
+gulp.task('cssrename',function(){
+	return gulp.src('./src/dist')
+			   .pipe(cssmin())
+			   .pipe(rename('goods.min.css'))
+			   .pipe(gulp.dest('./src/dist'));
+});
+
+//布置任务：压缩js
+var jsmin=require('gulp-uglify');
+
+gulp.task('jsmin',function(){
+	return gulp.src('./src/js/goodsList.js')
+			   .pipe(jsmin())
+			   .pipe(rename('goodsList.min.js'))
+			   .pipe(gulp.dest('./src/dist'));
+});
+
+//压缩图片
+
+var imagemin=require('gulp-imagemin');
+
+gulp.task('imagemin',function(){
+	return gulp.src('./src/img/*')
+			   .pipe(imagemin())
+			   .pipe(gulp.dest('./src/dist/img'));
+});
+
+//合并文件
+
+var concat=require('gulp-concat');
+
+gulp.task('concat',function(){
+	return gulp.src(['./src/*.js'])
+			   .pipe(concat('all.js'))
+			   .pipe(gulp.dest('./src/dist'));
 });

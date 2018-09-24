@@ -1,7 +1,7 @@
 
 //require配置
 
-require.config({
+;require.config({
 
     //配置短路径
     paths:{
@@ -15,6 +15,7 @@ require.config({
         'jquery.lxzoom':'../lib/jquery-lxzoom/jquery.lxzoom',
         'register':'js/register',
         'signIn':'js/signIn',
+        'car':'js/car'
 
     },
 
@@ -29,7 +30,8 @@ require.config({
         'goods':['jquery'],
         'jquery.lxzoom':['jquery'],
         'signIn':['jquery'],
-        'register':['jquery']
+        'register':['jquery'],
+        'car':['jquery']
     },
 
 

@@ -1,5 +1,5 @@
  // console.log(666)
- var Carousel = function (options) {
+ ;var Carousel = function (options) {
                 //属性
                 //默认值,如果没有传就用默认的,传了就用
                 let defaults = {
@@ -233,4 +233,4 @@
                 button: true,
                 type: 'horizontal',
                 imgs: ["img/b1.jpg","img/b2.jpg","img/b3.jpg","img/b4.jpg","img/b5.jpg","img/b6.jpg"]
-            })
+            });

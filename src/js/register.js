@@ -1,4 +1,4 @@
-require(['config'],function(){
+;require(['config'],function(){
     require(['jquery','common'],function($){
 
         //引入底部
@@ -48,7 +48,8 @@ require(['config'],function(){
         $('.denglu').click(function(){
             //获取用户信息
             var number  = $('.number2').val();
-            var password = $('password2').val();
+            var password = $('.password2').val();
+            console.log(password,number)
             //发起ajax请求
             $.ajax({
                 url:'../api/mysql/register.php',
@@ -60,8 +61,10 @@ require(['config'],function(){
                 success:function(xhr){
                     if(xhr=='exist'){
                         //用户信息正确，跳转首页页面
+                        location.href = '../index.html?'+number+'&'+password;
                     }else if(xhr=='inexistence'){
                         //用户信息错误
+                        alert('用户信息错误')
                     }
                 }
             })
@@ -71,4 +74,4 @@ require(['config'],function(){
 
 
     })
-})
+});

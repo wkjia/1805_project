@@ -1,6 +1,6 @@
 
 //引入模块
-require(['config'],function(){
+;require(['config'],function(){
     require(['jquery'],function($){
     //引入公共头部
     $('.g_header').load('common.html #header');
@@ -211,4 +211,4 @@ $('.g_footer').load('common.html #last');
 
 
     })
-})
+});
